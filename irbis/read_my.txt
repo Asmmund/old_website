@@ -1,0 +1,15 @@
+/**  
+ * IRB_Mailer - PHP email transport class  
+ * NOTE: Requires PHP version 5 or later   
+ * Info: http://irbis-team.com   
+ * @package irb_mailer  
+ * @author IT studio IRBIS-team  
+ * @copyright © 2010 IRBIS-team  
+ * @version 0.2  
+ * @license http://www.opensource.org/licenses/rpl1.5.txt  
+ */ 
+
+Скрипт распространяется по халявной лицезии. Делайте что хотите.
+Полное описание тут http://irbis-team.com/15/12/
+
+

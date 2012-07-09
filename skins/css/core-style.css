@@ -1,0 +1,318 @@
+/* //////////////////////////////////////////////////////
+Core style sheet of the site
+////////////////////////////////////////////////////// */
+body {
+    background-color: #95b7cd;/* of the body */
+    color: #666666; /* of the text in the body*/
+    font-family: Verdana, Helvetica, Arial, sans-serif; /* fonts to be used*/
+    font-size: 14px; /* size of font - em is the standart set for the browser of the user */
+    margin: 0; /* Margin from all sides*/
+    padding:0; /* padding set to 0 */
+    
+}
+
+
+/* //////////////////////////////////////////////////////
+simple statements
+////////////////////////////////////////////////////// */
+h1{
+    font-size:1.2em; /* size of font - em is the standart set for the browser of the user */
+    text-align: center; /* */
+    font-style: italic; /* italic text*/
+    letter-spacing: 5px; /*  space between the letters*/
+    color: blue;
+}
+
+h2{
+    font-size:1.1em; /* size of font - em is the standart set for the browser of the user */
+    text-decoration: underline;/* the line under the text*/
+}
+p{
+    font-size: 0.9em; /* size of font - em is the standart set for the browser of the user */
+    text-align: justify; /* Allign of text*/
+    line-height: 1.7em; /* space between the lines of text*/
+}
+
+p.footer{
+    font-size: .6em;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+/* //////////////////////////////////////////////////////
+Links
+////////////////////////////////////////////////////// */
+a:link{
+    background-color: #95b7cd;
+     color: #666666;
+     
+}
+a:visited{
+    background-color: #95b7cd;
+     color:  #C0C0C0;
+     
+}
+a:hover{
+    background-color: #aaddee;
+    color: #666666;
+}
+a:active{
+    background-color: #3cc7f0;
+}
+
+
+/* //////////////////////////////////////////////////////
+General classes
+////////////////////////////////////////////////////// */
+.alt{
+    color:gray;
+    font-weight: bold;
+    }
+
+.imp{
+    color:black;
+    font-weight: bold;
+    
+}
+
+
+
+.pages_menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /* the property NOT to show the dots etc before <li> */
+}
+
+.info {
+    color:#FF0000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mysql_list{
+    text-align: center;
+}
+
+/* //////////////////////////////////////////////////////
+ID's
+////////////////////////////////////////////////////// */
+/* ! ! ! Headers ! ! ! */
+#header{
+    background-color: #95b7cd;/* of the body */
+    padding-bottom:5px ;
+    padding-top: 5px;
+    padding-left: 125px;
+    padding-right: 125px;
+}
+#header p {
+    font-size:  .6em;
+    text-align: center;
+    background-color: #EEEEEE;
+}
+#header p a {
+    background: none;
+}
+/* ! ! ! content ! ! ! */
+#content{
+    position: relative;
+    margin: 0px auto; /* centering the content */
+    width: 779px;
+}
+
+/* ! ! ! main text ! ! ! */
+#main-text{
+    background-color: #EEEEEE;
+    border-left: black 1px solid;
+    border-right: black 1px solid;
+    border-bottom: black 1px solid;
+    margin-left:161px;
+    padding: 10px; /*  between the edge of the element & the content*/
+    
+}
+
+#main-text .location {
+    background-color: #FFFF99;
+    display: inline;
+}
+#main-text .location a {
+    background-color: #FFFFFF;
+}
+
+/* ! ! ! navbat ! ! ! */
+#navbar{
+   width: 198px;
+   float:left;
+}
+
+#navbar ul{
+    margin: 0;
+    padding:0;
+}
+
+#navbar ul li {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+
+#navbar ul li a:link, #navbar ul li a:visited {
+    display: block;
+    text-decoration: none;
+    font-weight:bold;
+    border-bottom: 1px solid black;
+    padding-top: 3px;
+    padding-bottom:3px;
+    padding-left:20px;    
+}
+
+#navbar ul li a:hover{
+    
+}
+
+
+/* ! ! ! Outer image ! ! ! */
+#outer-image{
+    height: 30px;
+    background-position: center top;
+}
+
+#outer-image .current_lang{
+    width: 60px;
+    height: 30px;
+    float: left;
+    background-color:#95b7cd;
+    padding-left: 2px;
+    padding-right: 2px;
+    
+}
+#outer-image .lang_menu {
+    width: 49px;
+    height: 30px;
+    float: right;
+    
+    padding-left: 2px;
+    padding-top:2px;
+    padding-bottom: 0px;
+    
+}
+
+#outer-image .lang_menu img{
+    border: 0;
+    height: 24px;
+    width: 20px;
+}
+
+#outer-image .choose_lang {
+    color: white;
+    background-color:#95b7cd;
+    float:right; 
+    padding-left:3px;
+    padding-top:6px;
+    padding-bottom: 5px;
+     
+}
+
+
+/* Inner image */
+#inner-image{
+    height: 199px;
+    background-image: url(images/inner-image.jpg);
+    background-repeat: no-repeat;
+    background-position: 240px 0px;
+    
+}
+/* posts of the guestbook & news */
+#posts{
+    background-color:#C0C0C0;
+    text-align:center;
+}
+
+#posts .guest_post{
+    margin: 10px;
+    background-color: #BDEBF6;
+    margin-left:10%;  
+    padding:5px;
+    border:1px solid;  
+    width:80%; 
+} 
+.guest_post textarea{
+    width: 400px;
+    height: 400px;
+}
+
+
+#posts .news_post_front {
+    border:1px solid;  
+    width:70%;  
+    background-color:#BDEBF6;
+    min-height:100px;  
+    margin-left:10%;  
+    padding:5px; 
+    
+}
+
+#posts .delete {
+    float:left;
+    color:red;
+}
+
+
+/** articles in info &jquery & articles modules */
+ .board {
+ background-color: #95b7cd;   
+}
+
+.info_art {
+    background-color: red;
+}
+
+
+.board  .mysql_list, 
+.info_art .mysql_list, 
+#posts .mysql_list{
+    margin: 15px;
+    text-align: justify;
+    background-color: white;
+    padding: 5px;
+}
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+registration
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.board .mysql_list .login,
+  .info_art .mysql_list .login,
+  #posts .mysql_list .login{
+    text-align: center;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+Buttons
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+div form .delete{
+    color:red;
+    float:right;
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+jQuery
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+#block1,#block2 { 
+background-color:#bca; 
+width:100px; 
+border:1px solid green;
+}
+/***********************************************************
+download
+***********************************************************/
+#download ul,#download li
+{
+    list-style: none;
+    margin: 5px ;
+}

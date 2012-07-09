@@ -1,0 +1,36 @@
+# uncoment all coments! ! ! ! 
+# htaccess of the site
+
+AddDefaultCharset UTF-8 
+php_flag magic_quotes_gpc Off 
+php_flag magic_quotes_runtime Off 
+php_flag register_globals Off 
+ErrorDocument 401 /401.html 
+ErrorDocument 403 /403.html 
+ErrorDocument 404 /404.html 
+Options -Indexes 
+
+
+php_value error_reporting 2047  
+ php_flag log_errors on  
+ php_flag display_errors off  
+
+ php_value error_log "/home/asashiin/domains/456room.org/public_html/elmor/log/error.log" 
+# echo $_SERVER['DOCUMENT_ROOT'].'/log/error.log'; for the above
+# /home/asashiin/domains/456room.org/public_html/elmor/log/error.log
+
+##########################################################################
+# Modrewrite http://irbis-team.com/15/4/11
+ RewriteEngine    on 
+
+# admin's page
+RewriteRule ^admin/(.*)$ admin/index.php?route=$1 [L,QSA] 
+
+
+# original rewrite
+RewriteCond %{REQUEST_URI} !^/admin  
+ RewriteCond %{REQUEST_FILENAME} !-f 
+ RewriteCond %{REQUEST_FILENAME} !-d 
+
+ RewriteRule ^(.*)$ index.php?route=$1 [L]
+ ##########################################################################

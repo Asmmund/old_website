@@ -1,0 +1,60 @@
+.IRB_paginator { 
+    padding: 2px; 
+	font-weight:bold;
+}
+
+.IRB_paginator_active { 
+    padding: 2px; 
+	color:#FF0000; 
+	font-weight:bold; 
+}
+
+.IRB_paginator_top { 
+    padding: 2px; 
+	font-weight:bold; 
+	color:#009900;
+}
+
+.IRB_paginator_block{ 
+    font-family:Verdana, Arial, Helvetica, sans-serif; 
+	color: #0099CC; 
+}
+
+.IRB_paginator_block a:link { 
+    text-decoration:none;
+	color: #0099CC;
+}
+
+.IRB_paginator_block a:visited {
+    text-decoration:none;
+	color: #0099CC;
+}
+
+.IRB_paginator_block a:hover {
+    text-decoration:none;
+	color: #0099CC;
+}
+
+.IRB_paginator_block a:active {
+    text-decoration:none;
+	color: #0099CC;
+}
+
+.IRB_paginator_top a:link { 
+	color:#009900;
+}
+
+.IRB_paginator_top a:visited {
+    text-decoration:none;
+	color: #009900;
+}
+
+.IRB_paginator_top a:hover {
+    text-decoration:none;
+	color: #009900;
+}
+
+.IRB_paginator_top a:active {
+    text-decoration:none;
+	color: #009900;
+}
